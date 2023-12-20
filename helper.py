@@ -13,13 +13,11 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-# Scrape
-service = Service()
-options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(service=service, options=options)
-
 
 def getCh(vernum, ver, book, ch):
+    '''
+    getCh gets the verses in a specified chapter
+    '''
     try:
         d = {}
         driver.get(
@@ -46,3 +44,47 @@ def getCh(vernum, ver, book, ch):
     except Exception as e:
         with open('errorlog.txt', 'a') as f:
             f.write(f"{datetime.now()} ERROR {ver} {book} {ch}: {e}\n")
+
+
+if (0):
+    # Scrape - only load once
+    service = Service()
+    options = webdriver.ChromeOptions()
+    driver = webdriver.Chrome(service=service, options=options)
+
+    # function calls
+    getCh(2016, "NRSV", "EZK", 20)
+    getCh(2016, "NRSV", "REV", 5)
+
+if (1):
+    niv = []
+    kjv = []
+    nkjv = []
+    nasb = []
+    nrsv = []
+    with open("NIV.csv") as f:
+        for row in f:
+            niv.append(row.split(",")[0])
+    with open("KJV.csv") as f:
+        for row in f:
+            kjv.append(row.split(",")[0])
+    with open("NKJV.csv") as f:
+        for row in f:
+            nkjv.append(row.split(",")[0])
+    with open("NASB2020.csv") as f:
+        for row in f:
+            nasb.append(row.split(",")[0])
+    with open("NRSV.csv") as f:
+        for row in f:
+            nrsv.append(row.split(",")[0])
+
+    # NIV and KJV - done - 3John1:15 not in KJV (combined with 14)
+    # NIV and NKJV - done - 3John1:15 not in NKJV (combined with 14)
+    # NIV and NASB - done - 13 verses taken out of NASB
+    # repeatniv = []
+    # for x in nasb:
+    #     if x in repeatniv:
+    #         print(x)
+    #     else:
+    #         repeatniv.append(x)
+    print(f"{[x for x in nrsv if x not in niv]}")
