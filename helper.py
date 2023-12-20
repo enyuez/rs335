@@ -54,10 +54,11 @@ if (1):
 
     # function calls
 
-    getCh(2692, "NASB2020", "MIC", 4)
-    getCh(2692, "NASB2020", "MIC", 5)
-    getCh(2692, "NASB2020", "MIC", 6)
-    getCh(2692, "NASB2020", "MIC", 7)
+    getCh(2692, "NASB2020", "1TI", 2)
+    getCh(2692, "NASB2020", "1TI", 3)
+    getCh(2692, "NASB2020", "1TI", 4)
+    getCh(2692, "NASB2020", "1TI", 5)
+    getCh(2692, "NASB2020", "1TI", 6)
 
 
 if (0):
