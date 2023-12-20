@@ -1,0 +1,17 @@
+ERROR NASB2020 ['Revelation', 'REV', '22'] 19: sequence item 0: expected str instance, NoneType found
+ERROR NASB2020 ['Revelation', 'REV', '22'] 19: sequence item 0: expected str instance, NoneType found
+ERROR NKJV ['Deuteronomy', 'DEU', '34'] 28: sequence item 1: expected str instance, NoneType found
+ERROR KJV ['Exodus', 'EXO', '40'] 28: sequence item 4: expected str instance, NoneType found
+ERROR KJV ['Exodus', 'EXO', '40'] 39: sequence item 4: expected str instance, NoneType found
+ERROR KJV ['Deuteronomy', 'DEU', '34'] 28: sequence item 0: expected str instance, NoneType found
+ERROR KJV ['Jeremiah', 'JER', '52'] 23: sequence item 2: expected str instance, NoneType found
+ERROR KJV ['Zechariah', 'ZEC', '14'] 14: sequence item 0: expected str instance, NoneType found
+ERROR KJV ['Revelation', 'REV', '22'] 19: sequence item 2: expected str instance, NoneType found
+ERROR NASB2020 ['Revelation', 'REV', '22'] 19: sequence item 0: expected str instance, NoneType found
+ERROR NKJV ['Deuteronomy', 'DEU', '34'] 28: sequence item 1: expected str instance, NoneType found
+ERROR KJV ['Exodus', 'EXO', '40'] 28: sequence item 4: expected str instance, NoneType found
+ERROR KJV ['Exodus', 'EXO', '40'] 39: sequence item 4: expected str instance, NoneType found
+ERROR KJV ['Deuteronomy', 'DEU', '34'] 28: sequence item 0: expected str instance, NoneType found
+ERROR KJV ['Jeremiah', 'JER', '52'] 23: sequence item 2: expected str instance, NoneType found
+ERROR KJV ['Zechariah', 'ZEC', '14'] 14: sequence item 0: expected str instance, NoneType found
+ERROR KJV ['Revelation', 'REV', '22'] 19: sequence item 2: expected str instance, NoneType found
