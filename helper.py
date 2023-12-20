@@ -46,17 +46,21 @@ def getCh(vernum, ver, book, ch):
             f.write(f"{datetime.now()} ERROR {ver} {book} {ch}: {e}\n")
 
 
-if (0):
+if (1):
     # Scrape - only load once
     service = Service()
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
 
     # function calls
-    getCh(2016, "NRSV", "EZK", 20)
-    getCh(2016, "NRSV", "REV", 5)
 
-if (1):
+    getCh(2692, "NASB2020", "MIC", 4)
+    getCh(2692, "NASB2020", "MIC", 5)
+    getCh(2692, "NASB2020", "MIC", 6)
+    getCh(2692, "NASB2020", "MIC", 7)
+
+
+if (0):
     niv = []
     kjv = []
     nkjv = []
